@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Compteur Cigarettes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Compteur de cigarettes</h1>
+
+  <section>
+    <p>
+      Date de début du programme :
+      <input type="date" id="dateDebut">
+      <button id="saveDate">OK</button>
+    </p>
+
+    <p>Objectif du jour : <span id="objectifJour">?</span> cigarettes</p>
+  </section>
+
+  <section>
+    <p>Aujourd’hui : <span id="todayDate"></span></p>
+
+    <div class="counter">
+      <button id="minus">-</button>
+      <span id="cigsFumees">0</span>
+      <button id="plus">+</button>
+    </div>
+
+    <p>Cigarettes non fumées : <span id="nonFumees">0</span></p>
+    <p>Économies du jour : <span id="economiesJour">0</span> €</p>
+    <p>Économies du mois : <span id="economiesMois">0</span> €</p>
+    <p>Économies totales : <span id="economiesTotales">0</span> €</p>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
